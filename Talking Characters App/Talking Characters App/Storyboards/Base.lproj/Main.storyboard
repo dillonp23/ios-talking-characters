@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Dto-kg-ytV">
     <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -26,7 +26,7 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="119.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UAp-Cr-ABG">
+                                        <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UAp-Cr-ABG">
                                             <rect key="frame" x="157" y="10" width="100" height="100"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="100" id="1Fi-Z9-e7h"/>
@@ -41,7 +41,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="characterImage" destination="UAp-Cr-ABG" id="hzi-3n-cPI"/>
-                                    <segue destination="Ira-5h-AUl" kind="show" id="umG-Uf-0x0"/>
+                                    <segue destination="Ira-5h-AUl" kind="show" identifier="ShowDetailVCsegue" id="umG-Uf-0x0"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -64,11 +64,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OcK-Il-b5Y">
-                                <rect key="frame" x="87" y="384" width="240" height="128"/>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OcK-Il-b5Y">
+                                <rect key="frame" x="0.0" y="179" width="414" height="683"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipz-kj-Kew">
-                                <rect key="frame" x="186" y="239" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ipz-kj-Kew">
+                                <rect key="frame" x="186" y="126" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -76,12 +76,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="OcK-Il-b5Y" firstAttribute="centerX" secondItem="4kc-7h-Wz6" secondAttribute="centerX" id="6WQ-4y-RZf"/>
-                            <constraint firstItem="qaz-fZ-M0V" firstAttribute="bottom" secondItem="OcK-Il-b5Y" secondAttribute="bottom" constant="350" id="LJP-EM-Ttv"/>
-                            <constraint firstItem="ipz-kj-Kew" firstAttribute="centerX" secondItem="4kc-7h-Wz6" secondAttribute="centerX" id="LQG-uQ-h9J"/>
-                            <constraint firstItem="OcK-Il-b5Y" firstAttribute="top" secondItem="ipz-kj-Kew" secondAttribute="bottom" constant="124" id="WZu-Ac-eqj"/>
-                            <constraint firstItem="OcK-Il-b5Y" firstAttribute="leading" secondItem="qaz-fZ-M0V" secondAttribute="leading" constant="87" id="bwx-Zi-uco"/>
-                            <constraint firstItem="OcK-Il-b5Y" firstAttribute="centerY" secondItem="4kc-7h-Wz6" secondAttribute="centerY" id="mSb-wL-cwM"/>
+                            <constraint firstItem="qaz-fZ-M0V" firstAttribute="bottom" secondItem="OcK-Il-b5Y" secondAttribute="bottom" id="AjY-fc-WR2"/>
+                            <constraint firstItem="OcK-Il-b5Y" firstAttribute="top" secondItem="ipz-kj-Kew" secondAttribute="bottom" constant="32" id="IRU-sD-gvs"/>
+                            <constraint firstItem="ipz-kj-Kew" firstAttribute="top" secondItem="qaz-fZ-M0V" secondAttribute="top" constant="38" id="PL7-zY-mSG"/>
+                            <constraint firstAttribute="trailing" secondItem="OcK-Il-b5Y" secondAttribute="trailing" id="eCH-cl-IuG"/>
+                            <constraint firstItem="OcK-Il-b5Y" firstAttribute="leading" secondItem="4kc-7h-Wz6" secondAttribute="leading" id="jNP-AR-3C6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qaz-fZ-M0V"/>
                     </view>
@@ -92,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SnV-tS-bpe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1951" y="-141"/>
+            <point key="canvasLocation" x="1950.7246376811595" y="-141.29464285714286"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4SR-t0-aZM">

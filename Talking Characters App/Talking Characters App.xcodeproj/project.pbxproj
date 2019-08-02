@@ -60,13 +60,12 @@
 		92A7AC1822F3C63F00743A86 /* Talking Characters App */ = {
 			isa = PBXGroup;
 			children = (
-				92A7AC3722F3C81000743A86 /* View Controllers */,
 				92A7AC3622F3C7E700743A86 /* Models */,
+				92A7AC3722F3C81000743A86 /* View Controllers */,
 				92A7AC3522F3C7D900743A86 /* Custom Views */,
+				92A7AC3822F3E05900743A86 /* Storyboards */,
 				92A7AC1922F3C63F00743A86 /* AppDelegate.swift */,
-				92A7AC1D22F3C63F00743A86 /* Main.storyboard */,
 				92A7AC2022F3C64000743A86 /* Assets.xcassets */,
-				92A7AC2222F3C64000743A86 /* LaunchScreen.storyboard */,
 				92A7AC2522F3C64000743A86 /* Info.plist */,
 			);
 			path = "Talking Characters App";
@@ -95,6 +94,15 @@
 				92A7AC3122F3C7BD00743A86 /* DetailViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		92A7AC3822F3E05900743A86 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				92A7AC1D22F3C63F00743A86 /* Main.storyboard */,
+				92A7AC2222F3C64000743A86 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
